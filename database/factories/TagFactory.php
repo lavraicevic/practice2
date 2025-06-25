@@ -17,7 +17,8 @@ class TagFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'article_id'=>fake()->numberBetween(1,10),
+            'name'=>fake()->title()
         ];
     }
 }
