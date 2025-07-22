@@ -4,17 +4,16 @@
 <head>
     <title>@yield('title')</title>
      @vite('resources/css/main.css')
+     @yield('styles')
 </head>
 <body>
-    @include('partials.nav')
-    <section>
-        <h1>Begininng</h1>
-    </section>
+    <header>  
+        @include('partials.nav')
+    </header>
 
+    @yield('content')
     
 
-    <div class="content">
-        @yield('content')
-    </div>
+    @include('partials.footer')
 </body>
 </html>
