@@ -3,7 +3,6 @@
 <html>
 <head>
     <title>@yield('title')</title>
-     @vite('resources/css/main.css')
      @yield('styles')
 </head>
 <body>

@@ -13,13 +13,13 @@ class Article extends Model
     /** @use HasFactory<\Database\Factories\ArticleFactory> */
     use HasFactory;
 
-    function users(){
-        return $this->belongsToMany(User::class);
+    function user(){
+        return $this->belongsTo(User::class);
     }
-    function categories(){
-        return $this->belongsToMany(Category::class);
+    function category(){
+        return $this->belongsTo(Category::class);
     }
     function tags(){
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsTo(Tag::class);
     }
 }

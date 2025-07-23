@@ -13,7 +13,7 @@ class Category extends Model
     /** @use HasFactory<\Database\Factories\CategoryFactory> */
     use HasFactory;
 
-    function articles(){
-        return $this->hasMany(Article::class);
+    function article(){
+        return $this->belongsTo(Article::class);
     }
 }
